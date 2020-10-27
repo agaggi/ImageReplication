@@ -1,4 +1,4 @@
-# CS 580 Assignment 2
+# Image Replication via Genetic Algorithm
 
 ## Program Requirements
 

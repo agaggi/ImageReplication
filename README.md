@@ -9,10 +9,10 @@ To install PIL (Python Imaging Library):
 
 ```bash
 # Linux
-pip3 install PIL
+pip3 install Pillow
 
 # Windows
-pip install PIL
+pip install Pillow
 ```
 
 ## Execution Instructions

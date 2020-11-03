@@ -18,6 +18,7 @@ def main():
 
     -- The `images` folder will be wiped each time the program is executed. --
     '''
+
     file_name = sys.argv[1]
     population = int(sys.argv[2])
     mode = sys.argv[3].lower()

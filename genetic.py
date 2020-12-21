@@ -64,10 +64,9 @@ class GeneticAlgorithm:
         '''Selects the best image(s) to be used in reproduction.
 
         The fitness function is used in order to obtain the list of children with their
-        differences from the original image. The list is then sorted by `difference` by
-        using `keyFunc`, which sorts by the first element in a child. In this case, it
-        is `difference`. Then, depending on the reproduction method, the best image(s)
-        and its triangles are selected to be the parent(s).
+        differences from the original image. The list is then sorted by the difference in
+        pixels. In this case, it. Then, depending on the reproduction method, the best
+        image(s) and its triangles are selected to be the parent(s).
 
         :param children: [image, triangles within image]
         '''
@@ -93,7 +92,9 @@ class GeneticAlgorithm:
         # Every 100 generations, the best image of that generation is outputted
         if self.generation % 100 == 0:
 
-            self.parents[0][0].save(os.path.join('generated images/', f'{self.generation}.jpg'))
+            self.parents[0][0].save(os.path.join('generated images/', 
+                                                 f'{self.generation}.jpg'))
+
             print(f'Fitness after {self.generation} generations: {children_list[0][2]}')
 
         # If the difference is 0 we are done

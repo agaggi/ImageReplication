@@ -11,8 +11,8 @@ def main():
 
     '''Main function for the Genetic Algorithm program.
 
-    This function will take in 3 or 4 arguements from the command line and a new
-    GeneticAlgorithm object will be created based on said arguements.
+    This function will take in 3 or 4 arguments from the command line and a new
+    GeneticAlgorithm object will be created based on said arguments.
 
     GeneticAlgorithm(`image`, `population size`, `reproduction method`)
     `crossover_rate`: rate at which crossover occurs (i.e. 0.7 => 70% crossover chance)

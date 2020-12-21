@@ -20,7 +20,7 @@ def main():
     ** The `images` folder will be wiped each time the program is executed. **
     '''
 
-    file_name = sys.argv[1]
+    file_name = f'images/{sys.argv[1]}'
     population = int(sys.argv[2])
     mode = sys.argv[3].lower()
 
@@ -36,7 +36,7 @@ def main():
             exit('\n-- Something is wrong with your arguements. See README file. --\n')
 
     # Cleans the images folder from the program's previous run
-    files = glob.glob('images/*')
+    files = glob.glob('generated images/*')
 
     for file in files:
 

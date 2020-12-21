@@ -93,7 +93,7 @@ class GeneticAlgorithm:
         # Every 100 generations, the best image of that generation is outputted
         if self.generation % 100 == 0:
 
-            self.parents[0][0].save(os.path.join('images/', f'{self.generation}.jpg'))
+            self.parents[0][0].save(os.path.join('generated images/', f'{self.generation}.jpg'))
             print(f'Fitness after {self.generation} generations: {children_list[0][2]}')
 
         # If the difference is 0 we are done

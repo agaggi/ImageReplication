@@ -3,7 +3,7 @@
 ## Program Requirements
 
 - Python version 3.7+
-- PIL
+- The **PIL** pip package
 
 To install PIL (Python Imaging Library):
 
@@ -27,33 +27,30 @@ python3 main.py [image] [population size] [reproduction method] [crossover rate]
 py .\main.py [image] [population size] [reproduction method] [crossover rate]
 ```
 
-### Arguements
+### Arguments
 
-1. Image - The following images are available:
+#### Image
 
-    - `d.jpg` - An apple
-    - `mona.jpg` - Mona Lisa
-    - `chester.jpg` - My cat
-        - This image is complex / detailed so it will be harder to get "good" results.
-    - `black.jpg` - A pure black image
+The following images are available:
 
-- Note that if you add your own image it **must** be in **.jpg** format, as that is how the results are saved / compared.
+- `d.jpg` - An apple
+- `mona.jpg` - Mona Lisa
+- `black.jpg` - A pure black image
+
+> If you add your own image it **must** be in **.jpg** format, as that is how the results are saved and compared.
     
-2. Population Size:
+#### Population Size
 
-    - **<= 100** is recommended as the program will take a considerable amount of time if a greater population size is entered.
-    - If the reproductive method you chose is `sexual`, your population size **must be at least** 2.
+- A population size of 100 or less is recommended if you are wanting quicker results. The greater the population size, the more likely you are to get a better parent.
+- If the reproductive method you enter is `sexual`, your population size **must be at least** 2.
 
-3. Reproductive Method:
+#### Reproductive Method:
 
-| Arguement      | Reproduction Method    
-| :------------: | :------------------: 
-| `sexual`       | Sexual Reproduction   
-| `asexual`      | Asexual Reproduction
+There are two reproductive methods that this program can perform: **sexual** and **asexual**.
 
-4. Crossover Rate (sexual reproduction only):
+#### Crossover Rate (sexual reproduction only):
 
-    - A floating point value from **0** to **1**.
+A floating point value from **0** to **1**. This value represents the percentage / chance crossover, the inheritance of characteristics from parents, should occur.
 
 ## Analysis
 

@@ -72,7 +72,6 @@ For examples of how this program ran, see the `sample images` folder.
 | :-----------: | :-------------: | :--------------------: | :-----------: 
 | `d.jpg`       | 100             | Asexual                | 5% 
 | `mona.jpg`    | 50              | Asexual                | 5% 
-| `chester.jpg` | 100             | Asexual                | 5% 
 | `black.jpg`   | 50              | Sexual (70% crossover) | 5%
 
 ## Citations

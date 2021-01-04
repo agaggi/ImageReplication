@@ -21,17 +21,19 @@ The `main.py` file is the file specified to be run; attempting to run any other 
 
 ```bash
 # Linux
-python3 main.py [image] [population size] [reproduction method] [crossover rate]
+python3 main.py images/{image} {population size} {reproduction method} {crossover rate}
 
 # Windows
-py .\main.py [image] [population size] [reproduction method] [crossover rate]
+py .\main.py images/{image} {population size} {reproduction method} {crossover rate}
 ```
+
+> Crossover rate is only required if the reproduction method you entered was **sexual**.
 
 ### Arguments
 
-#### Image
+#### Image Location
 
-The following images are available:
+The following images are available and are stored in the `images` directory:
 
 - `d.jpg` - An apple
 - `mona.jpg` - Mona Lisa
@@ -57,7 +59,6 @@ A floating point value from **0** to **1**. This value represents the percentage
 This program takes in an image, the number of images per generation, a reproductive method (i.e. *asexual* or *sexual*), as well as crossover rate if needed. Throughout the testing, each parameter was found to have a considerable impact on the functionality of the program. For example, when a population size of **2** is entered, over the course of the program, minor improvements will be made and the evolution process will be slow; it was very common for the fitness value to increase again.
 
 - Fitness values in this program represent the pure difference between the target image and an image within a population. **Lower is better**.
-
 - Note: 256 triangles were used throughout this program.
 
 It should also be noted that images with less complexity (i.e. images of a solid color) run much faster. When running the **black.jpg** file, the fitness values decrease dramatically at first and then plateau at around a fitness value of **250000** (see how the image was ran below). Other images would also plateau around a particular fitness value. This could have likely been alleviated by adding more members to the population or more triangles; however, it would have taken much more time.
@@ -71,7 +72,7 @@ For examples of how this program ran, see the `sample images` folder.
 | Image         | Population Size | Reproduction Method    | Mutation Rate  
 | :-----------: | :-------------: | :--------------------: | :-----------: 
 | `d.jpg`       | 100             | Asexual                | 5% 
-| `mona.jpg`    | 50              | Asexual                | 5% 
+| `mona.jpg`    | 300             | Asexual                | 5% 
 | `black.jpg`   | 50              | Sexual (70% crossover) | 5%
 
 ## Citations

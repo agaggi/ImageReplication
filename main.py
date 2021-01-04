@@ -20,11 +20,11 @@ def main():
     ** The `images` folder will be wiped each time the program is executed. **
     '''
 
-    file_name = f'images/{sys.argv[1]}'
+    file_location = sys.argv[1]
     population = int(sys.argv[2])
     mode = sys.argv[3].lower()
 
-    genetic = GeneticAlgorithm(file_name, population, mode)
+    genetic = GeneticAlgorithm(file_location, population, mode)
 
     # If the mode is sexual, implement crossover rate
     if mode == 'sexual':
